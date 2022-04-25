@@ -8,13 +8,13 @@ from math import pi
 
 def cylinder():
     def circle(r):
-        circle_area = 2 * pi * r
+        circle_area = pi * r**2
         return circle_area
 
     radius, side_surface = map(float, input('Enter radius and side surface of cylinder: ').split())
     print('Accepted')
     answer = int(input('1-show the side surface area, 2-show the total area of the cylinder: '))
-    side_area = round(circle(radius) + side_surface, 2)
+    side_area = round(2*pi*radius*side_surface, 2)
     if answer == 1:
         print(f'Side surface area = {side_area}')
     elif answer == 2:
