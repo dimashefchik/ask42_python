@@ -32,3 +32,4 @@ while True:
         continue
     else:
         print(int(a) + int(b))
+        break
