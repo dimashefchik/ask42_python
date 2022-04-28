@@ -35,6 +35,5 @@ for key, value in keys_is_numbers.items():
     keys_is_string[value] = key
 print(keys_is_numbers)
 print(keys_is_string)
-
 keys_is_string_2 = {value: key for key, value in keys_is_numbers.items()}
 print(keys_is_string_2)
