@@ -7,7 +7,7 @@ array_2 = array.copy()
 print(id(array_2))
 array_3 = array[:]
 print(id(array_3))
-
+print('==========')
 # Заполните один кортеж десятью случайными целыми числами от 0 до 5 включительно.
 # Также заполните второй кортеж числами от -5 до 0. Для заполнения кортежей числами напишите одну функцию.
 # Объедините два кортежа с помощью оператора +, создав тем самым третий кортеж.
@@ -26,7 +26,15 @@ while True:
         first_tuple = tuple(first_list)
         second_tuple = tuple(second_list)
         break
-print(first_tuple , second_tuple)
+third_tuple = first_tuple + second_tuple
+print(third_tuple)
+print(third_tuple.count(0))
 
-f_tu = tuple([random.randint(0,5) for x in range(10)])
-print(f_tu)
+print('==========')
+
+
+first_tuple_2 = tuple([random.randint(0, 5) for x in range(10)])
+second_tuple_2 = tuple([random.randint(-5, 0) for x in range(10)])
+third_tuple_2 = first_tuple_2 + second_tuple_2
+print(third_tuple_2)
+print(third_tuple_2.count(0))
