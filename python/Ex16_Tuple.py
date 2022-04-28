@@ -17,7 +17,16 @@ import random
 
 first_list = []
 second_list = []
-while len(first_list) <= 10 and len(second_list) <= 0:
-    number = random.randint(-5,5):
-        if number < 0:
-            second_list.append(number)
+while True:
+    number_1 = random.randint(0, 5)
+    number_2 = random.randint(-5, 0)
+    first_list.append(number_1)
+    second_list.append(number_2)
+    if len(first_list) == 10 and len(second_list) == 10:
+        first_tuple = tuple(first_list)
+        second_tuple = tuple(second_list)
+        break
+print(first_tuple , second_tuple)
+
+f_tu = tuple([random.randint(0,5) for x in range(10)])
+print(f_tu)
