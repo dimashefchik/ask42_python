@@ -1,8 +1,8 @@
-# Создайте файл data.txt по образцу урока.
-# Напишите программу, которая открывает этот файл на чтение,
+# Создайте файл data.txt по образцу урока. Напишите программу, которая открывает этот файл на чтение,
 # построчно считывает из него данные и записывает строки в другой файл (dataRu.txt),
 # заменяя английские числительные русскими, которые содержатся в списке
 # (["один", "два", "три", "четыре", "пять"]), определенном до открытия файлов.
+
 data = ['one - 1 - I', 'two - 2 - II', 'three - 3 - III', 'four - 4 - IV', 'five - 5 - V']
 file_1 = open('data.txt', 'w')
 for line in data:
@@ -33,8 +33,8 @@ file_2.close()
 # Создайте файл nums.txt, содержащий несколько чисел, записанных через пробел.
 # Напишите программу, которая подсчитывает и выводит на экран
 # общую сумму чисел, хранящихся в этом файле.
-from random import randint
 
+from random import randint
 file_3 = open('nums.txt', 'w', encoding='UTF-8')
 numbers = [str(randint(2, 7))+ ' ' for x in range(7)]
 file_3.writelines(numbers)
@@ -46,7 +46,6 @@ def count_sum(file_name):
     summa = sum([int(x) for x in list(file_numbers.split())])
     print(summa)
     file.close()
-
 count_sum('nums.txt')
 
 file = open(f'nums.txt', 'r')
