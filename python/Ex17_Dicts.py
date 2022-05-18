@@ -1,10 +1,7 @@
 # Создайте словарь, связав его с переменной school, и наполните данными,
 # которые бы отражали количество учащихся в разных классах (1а, 1б, 2б, 6а, 7в и т. п.).
 from random import randint
-
 school = {}
-
-# create dictionary school:
 for number_class in range(1, 6):
     school[f'{number_class}А'] = randint(25, 30)
     school[f'{number_class}Б'] = randint(25, 30)
@@ -24,11 +21,10 @@ for number in school.values():
     student_sum_2 += number
 print(student_sum_2)
 print('============')
+
 # Создайте словарь, где ключами являются числа, а значениями – строки.
 # Примените к нему метод items(), полученный объект dict_items передайте в написанную вами функцию,
-# которая создает и возвращает новый словарь, "обратный" исходному,
-# т. е. ключами являются строки, а значениями – числа.
-
+# которая создает и возвращает новый словарь, "обратный" исходному, т. е. ключами являются строки, а значениями – числа.
 keys_is_numbers = {1: 'dog', 2: 'cat', 3: 'mouse', 4: 'tiger', 5: 'snake'}
 keys_is_string = {}
 for key, value in keys_is_numbers.items():
